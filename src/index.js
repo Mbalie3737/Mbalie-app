@@ -7,8 +7,10 @@ function weatherSearchUpdate(response) {
     let windElement = document.querySelector("#wind");
     let timeElement = document.querySelector("#weather-time");
     let date = new Date(response.data.time * 1000);
+    let iconElement = document.querySelector("#icon");
 
 
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
     timeElement.innerHTML = formatDate(date);
     windElement.innerHTML = `${response.data.wind.speed}km/h`;
     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
