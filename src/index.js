@@ -2,6 +2,13 @@ function weatherSearchUpdate(response) {
     let temperatureElement = document.querySelector("#temperature");
     let temperature = response.data.temperature.current;
     let cityElement = document.querySelector("#weather-city");
+    let conditionElement = document.querySelector("#condition");
+    let humidityElement = document.querySelector("#humidity");
+    let windElement = document.querySelector("#wind");
+    windElement.innerHTML = response.data.wind.speed;
+
+    humidityElement.innerHTML = response.data.temperature.humidity;
+    conditionElement.innerHTML = response.data.condition.description;
     cityElement.innerHTML = response.data.city;
     temperatureElement.innerHTML = Math.round(temperature);
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mbalie-weather-app</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,9 +25,9 @@
         <h1 class="weather-city" id="weather-city"></h1>
         <div class="weather-app-details">
         <p class="app-details">
-            Wednesday 16:30, Sunny day
+            Wednesday 16:30, <span id="condition">Sunny day</span>
             <br>
-            Humidity:<strong>60%</strong>, Wind:<strong>5.6km/h</strong>
+            Humidity:<strong id="humidity">60%</strong>, Wind:<strong id="wind">5.6</strong>km/h
         </p>
         <div class="weather-temperature-container">
         <div class="icon">☀️</div> <div class="temperature" id="temperature"></div> <div class="degrees">°C</div>
