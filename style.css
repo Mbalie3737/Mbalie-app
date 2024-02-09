@@ -9,9 +9,9 @@ margin: 8px 8px 8px 8px;
     background-color: #bae8e8;
     display: block;
     margin: 50px;
-    margin-left: 30%;
+    margin-left: 10%;
     position: fixed;
-    padding: 60px 60px;
+    padding: 30px 30px;
     border-radius: 20px;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
@@ -80,4 +80,15 @@ justify-content: space-between;
 a {
     text-decoration: none;
     color:#5e87b8;
+}
+.weather-forecast-container {
+    color: rgba(0,0,0,0.6);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;
+}
+.weather-forecast-icon {
+    width: 30px;
 }
