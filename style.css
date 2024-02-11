@@ -85,11 +85,10 @@ a {
     color: rgba(0,0,0,0.6);
     font-size: 25px;
     display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 5px;
+    margin: 0 auto;
 }
 .weather-icon {
-    margin-bottom: 10px;
-    width: 48px;
+    width: 88px;
+    display: block;
+    margin: 0 auto;
 }
