@@ -54,8 +54,8 @@ function displayForecast() {
         forecastHTML =
         forecastHTML +
         `<div class="weather-forecast-container>
-        <div class="weather-forecast-date">${day}</div>
-        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-day">${day}</div>
+        <div class="weather-icon">🌤️</div>
         <div class="weather-forecast-temperature"></div>
         <strong class="weather-forecast-temperature-max">18&deg</strong>
         <span class="weather-forecast-temperature-min">12&deg</span>
@@ -67,6 +67,5 @@ function displayForecast() {
 }
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit",searchButton);
-
-weatherSearchCity("Paris");
+weatherSearchCity("paris");
 displayForecast();

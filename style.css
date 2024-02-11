@@ -83,12 +83,13 @@ a {
 }
 .weather-forecast-container {
     color: rgba(0,0,0,0.6);
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    padding: 20px;
+    padding: 5px;
 }
-.weather-forecast-icon {
-    width: 30px;
+.weather-icon {
+    margin-bottom: 10px;
+    width: 48px;
 }
