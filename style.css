@@ -84,11 +84,20 @@ a {
 .weather-forecast-container {
     color: rgba(0,0,0,0.6);
     font-size: 25px;
-    display: flex;
-    margin: 0 auto;
+    display: inline-table;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
 }
 .weather-icon {
     width: 88px;
     display: block;
     margin: 0 auto;
+}
+.weather-forecast-temperature-max {
+    color:#5e87b8;
+}
+.weather-forecast-temperature-min {
+    color:#5e87b8;
+
 }

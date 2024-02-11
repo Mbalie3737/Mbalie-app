@@ -48,7 +48,7 @@ function searchButton(event) {
 }
 function formatDay(timestamp) {
     let date = new Date(timestamp * 1000);
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
     return days[date.getDay()];
 }
 function getForecast(city) {
@@ -61,10 +61,10 @@ function displayForecast(response) {
     let forecastHTML = "";
 
     response.data.daily.forEach(function (day, index) {
-        if (index < 3) {
+        if (index < 4) {
         forecastHTML =
         forecastHTML +
-        `<div class="weather-forecast-container>
+        `<div class="weather-forecast-container id="weather-forecast-container">
         <div class="weather-forecast-day">${formatDay(day.time)}</div>
         <img src="${day.condition.icon_url}" class="weather-icon"/>
         <div class="weather-forecast-temperature"></div>
